@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+const userRespone = prompt(`Would you enjoy a piece of cake? 🎂 
+Answer Options: Y/N`);
 
-  // your code here
-
-})();
+if (userRespone === "Y") {
+  alert("There you go! 🍰");
+} else if (userRespone === "N") {
+  alert("More cake for me then :p !");
+} else {
+  alert(`ERROR: INVALID ANSWER`);
+}

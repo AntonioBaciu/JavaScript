@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /01-base/02-var-prompt/script.js - 1.2: var & prompt
+ * /04-dates/05-get-spooky-fridays/script.js - 4.5: calcul des vendredi 13
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -9,6 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const userName = prompt("Type your username below:");
-let userWelcome = `Hello, ${userName} !`;
-alert(userWelcome);
+(function() {
+
+    // your code here
+
+})();
