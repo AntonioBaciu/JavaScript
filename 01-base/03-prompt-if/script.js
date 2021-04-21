@@ -9,13 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const userRespone = prompt(`Would you enjoy a piece of cake? 🎂 
-Answer Options: Y/N`);
-
-if (userRespone === "Y") {
-  alert("There you go! 🍰");
-} else if (userRespone === "N") {
-  alert("More cake for me then :p !");
-} else {
-  alert(`ERROR: INVALID ANSWER`);
+function serveCake() {
+  // Stores the prompted message in a variable
+  let userResponse = prompt(`Would you enjoy a piece of cake? 🎂 
+  Answer Options: yes | no`);
+  // if else statement
+  if (userResponse === "yes" || userResponse === "Yes") {
+    alert("There you go! 🍰");
+  } else if (userResponse === "no" || userResponse === "No") {
+    alert("More cake for me then :p !");
+  } else {
+    alert(`ERROR: INVALID ANSWER`);
+  }
 }
+// Calls the function
+serveCake();

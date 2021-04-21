@@ -9,6 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const userName = prompt("Type your username below:");
-let userWelcome = `Hello, ${userName} !`;
-alert(userWelcome);
+function welcomeFunction() {
+  const userName = prompt("Type your username below:");
+  let welcomeMessage = `Hello, ${userName} !`;
+  alert(welcomeMessage);
+}
+welcomeFunction();

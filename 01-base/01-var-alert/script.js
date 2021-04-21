@@ -10,5 +10,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const messageAlert = "Hello, World!";
-alert(messageAlert);
+const userMessage = "Hello, World!";
+
+function userAlert() {
+  alert(messageAlert);
+}
+userAlert();
