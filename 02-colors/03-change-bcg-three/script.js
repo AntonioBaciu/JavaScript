@@ -9,8 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  let colors = ["red", "orange", "yellow", "green", "cyan", "blue", "purple"];
+  let button = document.getElementById("run");
 
-    // your code here
-
+  button.addEventListener("click", function () {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    let bgContainer = document.body;
+    bgContainer.style.backgroundColor = randomColor;
+  });
 })();
+
+//OR
+
+// (function () {
+// Colors array
+//   let colors = ["red", "orange", "yellow", "green", "cyan", "blue", "purple"];
+// Event listener
+//   let button = document.getElementById("run");
+//   button.addEventListener("click", function () {
+// Random Color Function
+//     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     let bgContainer = document.getElementById("wrap");
+//     bgContainer.style.backgroundColor = randomColor;
+//   });
+// })();

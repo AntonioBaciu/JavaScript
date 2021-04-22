@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function userData() {
+(function test() {
   const userAge = prompt("Type in your current age:");
   const userGender = prompt("Type in your gender:");
   const userLocation = prompt("Type in the name of your Town:");
@@ -20,8 +20,25 @@ Gender: ${userGender}
 Town: ${userLocation}
 To proceed further, confirm your responses by clicking on the OK button.`);
   if (userInfo !== true) {
-    userData();
+    test();
   }
-}
+})();
 
-userData();
+// OR
+
+// function userData() {
+//   const userAge = prompt("Type in your current age:");
+//   const userGender = prompt("Type in your gender:");
+//   const userLocation = prompt("Type in the name of your Town:");
+
+//   const userInfo = confirm(`Your responses:
+// Age: ${userAge}
+// Gender: ${userGender}
+// Town: ${userLocation}
+// To proceed further, confirm your responses by clicking on the OK button.`);
+//   if (userInfo !== true) {
+//     userData();
+//   }
+// }
+
+// userData();
