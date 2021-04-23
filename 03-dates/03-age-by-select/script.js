@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  document.getElementById("run").addEventListener("click", function () {
+    const dobDay = document.getElementById("dob-day").value;
+    const dobMonth = document.getElementById("dob-month").value;
+    const dobYear = document.getElementById("dob-year").value;
+    const formatDob = `${dobDay}/${dobMonth}/${dobYear}`;
 
-    // your code here
+    const dateToday = new Date();
+    const dateOfBirth = new Date(formatDob);
 
+    const diff = dateToday.getTime() - dateOfBirth.getTime();
+    const age = Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25);
+
+    alert(`You are ${age} years old 😎`);
+  });
 })();
