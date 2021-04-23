@@ -20,7 +20,16 @@
     (today.getMinutes() < 10 ? "0" : "") + today.getMinutes(); // displays numbers in two decimals
 
   // Days of Week Array
-  const dayOfWeek = ["none", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+  const dayOfWeek = [
+    "none",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
 
   // Uses ternary to
   let currentDayName =

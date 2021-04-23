@@ -9,21 +9,29 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var fruits = [
+    "pomme",
+    "poire",
+    "fraise",
+    "tomate",
+    "orange",
+    "mandarine",
+    "durian",
+    "pêche",
+    "raisin",
+    "cerise",
+  ];
 
-    var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
-
-    // your code here
-
+  document.getElementById("run").addEventListener("click", function () {
+    // removes 1st element
+    fruits.shift();
+    // removes last element
+    fruits.pop();
+    // adds new element at the beginning
+    fruits.unshift("banana");
+    // adds new element at the end
+    fruits.push("kiwi");
+    console.log(fruits);
+  });
 })();
