@@ -10,15 +10,33 @@
 // You will have time to focus on it later.
 
 (function () {
-  var performOperation = function (operation) {
-    
-  };
-
-  Array.from(document.querySelectorAll("button.operator")).forEach(function (
-    $btn
-  ) {
-    $btn.addEventListener("click", function () {
-      performOperation($btn.id);
-    });
+  // Selects what happens if one of the buttons is clicked
+  document.querySelector(".actions").addEventListener("click", (event) => {
+    performOperation(event.target.id);
   });
+
+  // Arrow function containing switch statement.
+  const performOperation = (operation) => {
+    const valueOne = Number(document.getElementById("op-one").value);
+    const valueTwo = Number(document.getElementById("op-two").value);
+    // Switch statement uses the [operation] parameter from function
+    // to switch the performed operation between the two values
+    switch (operation) {
+      case "addition": {
+        alert(valueOne + valueTwo);
+        break;
+      }
+      case "substraction": {
+        alert(valueOne - valueTwo);
+        break;
+      }
+      case "division": {
+        alert(valueOne / valueTwo);
+        break;
+      }
+      default: {
+        alert(valueOne * valueTwo);
+      }
+    }
+  };
 })();
