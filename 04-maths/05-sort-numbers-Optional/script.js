@@ -10,9 +10,17 @@
 // You will have time to focus on it later.
 
 (function () {
-  // to get the value of an input: document.getElementById("element-id").value
-
   document.getElementById("run").addEventListener("click", function () {
-    // your code here
+    // Gets value
+    const numbers = document.getElementById("numbers").value;
+    // Converts value to integer array
+    const converted = numbers.split(",").map(Number);
+    // Compare function
+    function compare(a, b) {
+      return a - b;
+    }
+    // Sorts numbers in ascending order
+    converted.sort(compare);
+    alert(converted);
   });
 })();

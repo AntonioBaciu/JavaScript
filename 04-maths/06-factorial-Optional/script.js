@@ -9,14 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
-
-    document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
-    });
-
+(function () {
+  document.getElementById("run").addEventListener("click", function () {
+    const inputValue = Number(document.getElementById("number").value);
+    let factorialValue = 1;
+    for (i = 1; i <= inputValue; i++) {
+      factorialValue = factorialValue * i;
+    }
+    alert(`The factorial of ${inputValue} is ${factorialValue}.`);
+  });
 })();

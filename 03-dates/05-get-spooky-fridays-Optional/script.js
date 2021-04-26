@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (function () {
-  document.getElementById("run").addEventListener("click", function () {});
+  document.getElementById("run").addEventListener("click", function () {
+    alert("Check answer in console 😉");
+    const yearValue = document.getElementById("year").value;
+    for (let month = 0; month < 12; month++) {
+      const date = new Date(yearValue, month, 13);
+      if (date.getDay() == 5) {
+        console.log(date);
+      }
+    }
+  });
 })();
