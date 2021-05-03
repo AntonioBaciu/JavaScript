@@ -12,12 +12,12 @@
 (() => {
   document.getElementById("run").addEventListener("click", function () {
     const introduction = {
+      astname: "Baciu",
       firstname: "Antonio",
-      lastname: "Baciu",
       age: 23,
       city: "Iasi",
       country: "Romania",
     };
-    console.log(introduction);
+    console.log(Object.values(introduction));
   });
 })();
