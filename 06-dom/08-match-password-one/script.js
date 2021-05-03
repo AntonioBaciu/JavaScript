@@ -9,8 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  document.getElementById("run").addEventListener("click", function () {
+    // Gets the inputs and he value of inputs
+    const inputOne = document.getElementById("pass-one").value;
+    const inputTwo = document.getElementById("pass-two").value;
+    const borderOne = document.getElementById("pass-one");
+    const borderTwo = document.getElementById("pass-two");
 
-    // your code here
+    // Function checks if the two input values are the same and changes the border color
+    function compareValues(a, b) {
+      if (a != b) {
+        borderOne.style.borderColor = "red";
+        borderTwo.style.borderColor = "red";
+      } else {
+        borderOne.style.borderColor = "green";
+        borderTwo.style.borderColor = "green";
+      }
+    }
 
+    compareValues(inputOne, inputTwo);
+  });
 })();
