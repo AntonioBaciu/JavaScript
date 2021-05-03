@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    const keys = ["name", "species", "age", "gender", "color"];
-    const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+  const keys = ["name", "species", "age", "gender", "color"];
+  const values = ["Skitty", "cat", 9, "female", "tabby"];
+
+  document.getElementById("run").addEventListener("click", function () {
+    // Creates a 'for loop' that combines two Arrays
+    //'keys' & 'values' and stores then in a new variable (in a specific order)
+    for (let i = 0; i < keys.length; i++) {
+      let mergedArray = [[keys[i], values[i]]];
+      const convertedArray = Object.fromEntries(mergedArray);
+      console.log(convertedArray);
+    }
+  });
 })();
