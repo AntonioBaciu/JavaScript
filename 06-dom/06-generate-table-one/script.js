@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  // Gets the location of the target div
+  var tableLocation = document.getElementById("target");
+  var tableTag = document.createElement("table"); // Creates table tag
 
-    // your code here
-
+  // Creates 10 rows respecting the for loop
+  // and places the items: ROWS in TABLE in DIV
+  for (let i = 1; i <= 10; i++) {
+    var tableRow = document.createElement("tr");
+    tableTag.appendChild(tableRow);
+    tableLocation.appendChild(tableTag);
+  }
 })();
