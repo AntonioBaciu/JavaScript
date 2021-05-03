@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  const allTarget = document.querySelectorAll(".target");
 
-    // your code here
-
+  // Changes the text of multiple elements with a for each loop
+  allTarget.forEach((element) => {
+    element.textContent = "Owned";
+  });
 })();
