@@ -25,3 +25,13 @@
     getHeroes(inputVal);
   });
 })();
+
+// Personal note:
+// Could use url/id .
+// Visible [1.].
+// The hero names do not get displayed one under another. Let's call it a feature.
+// Kinda understood what an API is and how I can access it.
+
+// Future me, watch these(they might help ya):
+// https://www.youtube.com/watch?v=uxf0--uiX0I&list=LL&index=2  -> FETCH API
+// https://www.youtube.com/watch?v=OSficvLDefM  -> TEMPLATE
